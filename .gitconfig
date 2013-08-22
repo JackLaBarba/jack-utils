@@ -1,0 +1,23 @@
+[color]
+	ui = auto
+[user]
+	name = Jack LaBarba
+	email = brakit@gmail.com
+[apply]
+	whitespace = nowarn
+[core]
+	editor = emacs
+
+[diff]
+        tool = ediff
+        guitool = ediff
+
+[difftool "ediff"]
+        cmd = /home/jlabarba/jack-utils/git/ediff.sh $LOCAL $REMOTE $MERGED
+
+[merge]
+        tool = ediff
+
+[mergetool "ediff"]
+        cmd = /home/jlabarba/jack-utils/git/ediff.sh $LOCAL $REMOTE $MERGED $BASE
+        trustExitCode = true
